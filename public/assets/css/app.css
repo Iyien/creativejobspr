@@ -1,0 +1,22 @@
+.navbar, .navbar-default, .navbar-fixed-top {
+  padding: 15px 20px;
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
+.navbar-brand > img {
+  width: 160px;
+  height: 30px;
+}
+
+.cat {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+#info, .container {
+  margin-top: 100px;
+}
