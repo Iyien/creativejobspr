@@ -4,6 +4,12 @@ $(document).ready(function() {
   //   $('.container').html(data);
   // });
 
+// movement rows
+  // $('.navbar-toggle').on('click', function() {
+  //   $(this).toggleClass('open');
+  //   $(this).toggleClass('closed');
+  // });
+
   // Link to do scrollDown animation
   $('#creatives-link').on('click', function(e) {
     e.preventDefault();
