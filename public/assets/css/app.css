@@ -1,22 +1,92 @@
-.navbar, .navbar-default, .navbar-fixed-top {
-  padding: 15px 20px;
+body {
+  padding-top: 70px;
 }
 
 .navbar-brand {
-  padding: 10px;
+  padding: 0;
+  line-height: 0;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand > img {
-  width: 160px;
-  height: 30px;
+  width: 190px;
+  height: 40px;
 }
 
-.cat {
-  width: 400px;
-  height: 300px;
-  position: relative;
-}
+
 
 #info, .container {
   margin-top: 100px;
 }
+
+.navbar-toggle.open > .icon-bar.first,
+  .navbar-toggle.open > .icon-bar.middle,
+  .navbar-toggle.open > .icon-bar.last{
+    transition: top .5s, transform .5s .5s ease;
+  }
+
+  .navbar-toggle.closed > .icon-bar.first,
+  .navbar-toggle.closed > .icon-bar.middle,
+  .navbar-toggle.closed > .icon-bar.last{
+    transition: transform .5s, top .5s .5s ease;
+  }
+
+  .navbar-toggle.closed > .first {
+    position: absolute;
+    top: 6px;
+  }
+
+  .navbar-toggle.closed > .last {
+    position: absolute;
+    top: 16px;
+  }
+
+  .navbar-toggle.open > .first {
+    position: absolute;
+    top: 13px;
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.open > .middle {
+    background-color: transparent;
+  }
+
+  .navbar-toggle.open > .last {
+    position: absolute;
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+
+
+  footer {
+    background-color: #adadad;
+    padding: 45px 0;
+  }
+
+  footer ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+  }
+
+  footer ul li {
+    display: inline;
+    margin: 0px 5px;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  footer ul li a:hover,
+  footer ul li a:visited,
+  footer ul li a:active,
+  footer ul li a:focus {
+    text-decoration: none;
+    color: #ffffff;
+  }
